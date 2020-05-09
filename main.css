@@ -5,6 +5,74 @@
     text-decoration: none;
 }
 
-.wrapper{
-    gri
+body{
+    margin-top: 20px;
+    background-image: url(white-clouds-and-blue-sky-907485.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 325%;
+    background-position: center;
 }
+
+.wrapper{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "button button"
+    "image image"
+    "link1 link2"
+    "link3 link4";
+}
+
+.header{
+    text-align: center;
+    grid-area: header;
+    font-size: 22px;
+}
+
+.button{
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    
+}
+.space{
+    margin: 25px;
+    padding: 10px;
+}
+
+.link1{
+    grid-area: link1;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    color: black;
+    margin: 10px;
+
+}
+
+.link2{
+    grid-area: link2;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.link3{
+    grid-area: link3;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+
+}
+
+.link4{
+    grid-area: link4;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
