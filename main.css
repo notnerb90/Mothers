@@ -12,6 +12,8 @@ body{
     background-attachment: fixed;
     background-size: 325%;
     background-position: center;
+    font-size: 24px;
+    font-family: 'Bree Serif', serif;
 }
 
 .wrapper{
@@ -19,7 +21,7 @@ body{
     grid-template-areas:
     "header header"
     "button button"
-    "image image"
+    "below below"
     "link1 link2"
     "link3 link4";
 }
@@ -28,6 +30,7 @@ body{
     text-align: center;
     grid-area: header;
     font-size: 22px;
+    color: rgb(49, 47, 47);
 }
 
 .button{
@@ -40,6 +43,15 @@ body{
 .space{
     margin: 25px;
     padding: 10px;
+    box-shadow: 3px 3px 2px black;
+}
+
+.clickBelow{
+    grid-area: below;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+
 }
 
 .link1{

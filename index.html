@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Mother's Day!</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -15,8 +16,7 @@
             <button class="space" onclick="translation()">Slovensky</button>
             <button class="space" onclick="translation()">English</button>
         </div>
-        <!--<div class="image1"><img src="English.jpg" alt=""></div>
-        <div class="image2"><img src="slovak.jpeg" alt=""></div>-->
+        <div class="clickBelow" id="slvInst">Please click on your name below!</div>
         <div class="link1"> <a href="malinda.html">💗Malinda💗</a></div>
         <div class="link2"><a href="eva.html">💗Eva💗</a></div>
         <div class="link3"><a href="jessica.html">💗Jessica💗</a></div>
@@ -25,10 +25,13 @@
     <script>
         function translation() {
         let x = document.getElementById("slovak");
+        let y = document.getElementById("slvInst")
         if (x.innerHTML === "💗Happy💗<br>Mother's<br>💗Day💗") {
             x.innerHTML = "💗Všetko💗<br>Najlepšie<br>ku Dňu<br>💗Matiek💗";
+            y.innerHTML = "Prosím, klikni na svoje meno."
         } else {
             x.innerHTML = "💗Happy💗<br>Mother's<br>💗Day💗";
+            y.innerHTML = "Click on your name below!"
   }
 }
 
