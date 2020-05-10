@@ -4,9 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Averia+Serif+Libre&family=Bree+Serif&family=Courgette&family=Fondamento&family=Great+Vibes&family=Lato&family=Rochester&family=Special+Elite&display=swap" rel="stylesheet">    <style>
+        body{
+            background-color: rgb(225, 228, 230);
+        }
+        .wrapper{
+            display: grid;
+            grid-template-areas: 
+                "header"
+                "vid"
+                "youtube";
+        }
+
+        .header{
+            grid-area: header;
+            margin: 20px;
+            background-color: rgba(255, 206, 218, 0.781);
+            box-shadow: 4px 4px 2px rgb(66, 63, 47);
+            padding: 28Spx;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            font-size: 22px;
+        }
+
+            .imageAdjust{
+            width: 250px
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+        }
+
+        .vid{
+            grid-area: vid;
+            box-shadow: 4px 4px 2px rgb(66, 63, 47);
+
+        }
+
+        .youtube{
+            width: 300px;
+            grid-area: youtube;
+            display: flex;
+            justify-content: center;
+    
+        }
+        .youtubeAdj{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
-    <div><h1>For Eva</h1></div>
-    
+    <div class="wrapper">
+        <div class="header">
+            <h2>Všetko Najlepšie<br>ku Dňu Matiek</h2>
+            <div class="img"><img class="imageAdjust" src="forget-me-not-blossom-bloom-flower.jpg" alt=""></div>
+            <p>Maminka,<br> 
+                Ďakujem Ti, že si. Ďakujem za to, kto
+                 si a kým pre mňa si. Si nádherná, múdra, 
+                 silná a úžasná žena a zároveň tá najlepšia
+                  mamina na svete. Celý môj život pri mne 
+                  stojíš, podporuješ ma a zahŕňaš ma obrovskou 
+                  láskou. Dala si mi tú najlepšiu výchovu.
+                   Vďaka Tebe som, kým som.
+                    Som veľmi vďačná, že som Tvoja dcéra a som 
+                    na Teba veľmi hrdá. Si výnimočná a
+                     inšpirujúca žena. Veľmi Ťa ľúbim a 
+                     vždy budem, mami.</p>
+        </div>
+        <div class="youtubeAdj">
+            <a href="https://youtu.be/NkUTUlKXa4o"><img class="youtube" src="youtube.png" alt=""></a>
+        </div>
+    </div>
 </body>
 </html>

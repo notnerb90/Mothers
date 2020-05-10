@@ -4,8 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Averia+Serif+Libre&family=Bree+Serif&family=Courgette&family=Fondamento&family=Great+Vibes&family=Rochester&family=Special+Elite&display=swap" rel="stylesheet">
+    <style>
+                body{
+            background-color: rgb(255, 255, 255);
+        }
+        .wrapper{
+            display: grid;
+            grid-template-areas: 
+                "header"
+                "vid";
+        }
+
+        .header{
+            grid-area: header;
+            margin: 20px;
+            background-color: rgba(207, 204, 204, 0.781);
+            box-shadow: 4px 4px 2px rgb(66, 63, 47);
+            padding: 28Spx;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Special Elite', cursive;
+            font-size: 22px;
+            line-height: 2;
+
+        }
+        .imageAdjust{
+            width: 250px
+            
+        }
+        .img{
+            display: flex;
+            justify-content: center;
+        }
+
+        .vid{
+            grid-area: vid;
+            box-shadow: 4px 4px 2px rgb(66, 63, 47);
+
+        }
+    </style>
 </head>
 <body>
-    <div><h1>For Jessica</h1></div>
+    <div class="wrapper">
+        <div class="header">
+            <h2>For a Wonderful Mother</h2>
+            <div class="img"><img class="imageAdjust" src="jessicaimg.jpg" alt=""></div>
+            <p>It is so amazing the mother you have 
+                been to Brycen! What a blessed young man
+                he is to have been placed in your care.
+                The example you are providing 
+                in life, faith, and marriage will stay with him throughout
+                his life. Love you sister!<br><br>
+                "It is at our mother's knee that we acquire our noblest and truest and highest ideals."<br>-Mark Twain
+            </p>
+        </div>
+    </div>
 </body>
 </html>

@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Averia+Serif+Libre&family=Bree+Serif&family=Courgette&family=Fondamento&family=Great+Vibes&family=Rochester&family=Special+Elite&display=swap" rel="stylesheet">
+    <style>
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+    .wrapper{
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "vid";
+    }
+
+    .header{
+        grid-area: header;
+        margin: 20px;
+        background-color: rgba(207, 204, 204, 0.781);
+        box-shadow: 4px 4px 2px rgb(66, 63, 47);
+        padding: 28Spx;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Courgette', cursive;
+        font-size: 20px;
+        line-height: 2;
+
+    }
+    .imageAdjust{
+        width: 250px
+    }
+    .img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .vid{
+        grid-area: vid;
+        box-shadow: 4px 4px 2px rgb(66, 63, 47);
+
+    }
+    </style>
 </head>
 <body>
-    <div><h1>For Christy</h1></div>
+    <div class="wrapper">
+        <div class="header">
+        <h1>Loving Mother</h1>
+        <div class="img"><img class="imageAdjust" src="chickadee.jpg" alt=""></div>
+        <p>Christy,<br>You are such a loving mother to little Joanna!!! 
+        If there was one thing that every single person who meets you 
+        would agree on it is how much you care for that little girl. I
+         have no doubt in my mind that you would go to the ends of the earth for her.
+          She is so blessed to have you! I love you!</p>
+        </div>font-family: 'Courgette', cursive;
+    </div>
 </body>
 </html>
